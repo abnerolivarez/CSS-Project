@@ -1,0 +1,408 @@
+:root {
+    /* Colors */
+    --primary-color: #160b03;
+    --secondary-color: rgb(241, 186, 4);
+    --dark-color: #252525;
+    --white-color: #fff;
+    --light-gray-color: #f2f2f2;
+}
+
+.about-content img{
+    width: 100%;
+  
+}
+.about-content .about-info{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns:repeat(1, .5fr);
+    margin-top: -30rem;
+}
+.about-content .about-info p, .about-content .about-info h2{
+    margin-left: 4.5rem;
+    font-size: 1.3rem;
+}
+
+.about-content .about-info h2{
+    font-size: 2.5rem;
+}
+
+/* .about .about-subinfo1, .about .about-subinfo2, 
+.about .about-subinfo3, .about .about-subinfo4{
+    width: calc(100% / 2 - 2rem); 
+} */
+.about-subcontent{
+    /* display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    padding: 50px 100px 100px; */
+    
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(4, .1fr);
+    justify-content: center;
+    margin-top: 13rem;
+}
+.about-subinfo1, .about-subinfo2, 
+.about-subinfo3, .about-subinfo4{
+    padding: 2rem;
+    width: 250px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.about-subinfo1:hover, .about-subinfo2:hover, 
+.about-subinfo3:hover, .about-subinfo4:hover{
+    border: 2px solid  var(--secondary-color);
+}
+
+.about-subinfo1 {
+    text-align: center;
+    background-color: bisque;
+}
+
+.about-subinfo2 {
+    text-align: center;
+    background-color: rgb(248, 208, 158);
+}
+
+.about-subinfo3 {
+    text-align: center;
+    background-color: bisque;
+}
+
+.about-subinfo4 {
+    text-align: center;
+    background-color: rgb(248, 208, 158);
+}
+
+footer{
+    margin-top: 5rem;
+}
+
+.mission-container{
+    display: grid;
+    gap: 8rem;
+    grid-template-columns: repeat(2, .5fr);
+    justify-content: center;
+    background-color: rgb(233, 233, 233);
+    margin-top: 5.5rem;
+}
+
+.mission-content1 .title, .mission-content2 .title,
+.mission-content3 .title{
+    font-size: 1.3rem;
+    margin-top: -2rem;
+    
+}
+.mission-container .fa-rocket, 
+.mission-container .fa-eye, .mission-subcont .fa-hands-holding-child
+{
+    display: flex;    
+    font-size: 3rem;
+    margin-top: 2rem;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.mission-container .fa-rocket:hover{
+    color: var(--secondary-color);
+}
+.mission-container .fa-eye:hover{
+    color: #f47a25;
+}
+.mission-subcont .fa-hands-holding-child:hover{
+    color: #9bc74b;
+}
+
+.mission-content1 p, .mission-content2 p, 
+.mission-subcont p{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.mission-subcont{
+    display: grid;
+    grid-template-columns: repeat(1, .5fr);
+    justify-content: center;
+    background-color: rgb(233, 233, 233);
+}
+.mission-content3{
+    margin-top: 2rem;  
+}
+/* Mobile Screen Setting */
+@media screen and (max-width: 1200px){
+    
+    .about-content .about-info{
+        display: grid;
+        gap: .5rem;
+        grid-template-columns:repeat(1, .5fr);
+        margin-top: -27rem;
+    }
+    .about-content .about-info p  {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .about-subcontent{
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(2, .1fr);
+        justify-content: center;
+        padding: 5rem;
+        margin-top: 6rem;
+    }
+    .about-subinfo1, .about-subinfo2, 
+    .about-subinfo3, .about-subinfo4{
+        padding: 3.5rem;
+        width: 400px;
+    }  
+    .mission-container{
+        display: grid;
+        gap: 5rem;
+        padding: 1rem;
+        grid-template-columns: repeat(2, .5fr);
+        justify-content: center;
+        margin-top: 2rem;
+    } 
+    .mission-subcont{
+        display: grid;
+        grid-template-columns: repeat(1, .6fr);
+        justify-content: center;  
+    }
+   
+}
+
+@media screen and (max-width: 900px){
+   
+    .about-content .about-info{
+        margin-top: -25rem;
+    }
+    .about-content .about-info p  {
+        font-size: .8rem;
+        line-height: 1.6rem;
+    }
+    .about-content .about-info h2{
+        font-size: 2rem;   
+    }
+    .about-subcontent{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, .3fr);
+        margin-top: 2rem;
+    }
+    .about-subinfo1, .about-subinfo2, 
+    .about-subinfo3, .about-subinfo4{
+        padding: 3.5rem;
+        font-size: 1.1rem;
+        width: 350px;
+    } 
+    .mission-container{
+        display: grid;
+        gap: 5rem;
+        padding: 1rem;
+        grid-template-columns: repeat(2, .5fr);
+        justify-content: center;
+        margin-top: 2rem;
+    } 
+    .mission-subcont{
+        display: grid;
+        grid-template-columns: repeat(1, .6fr);
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: 800px){
+    .menu.show{
+        display: block;
+    }
+    .about-content .about-info{
+        margin-top: -22rem;
+    }
+    .about-content .about-info p  {
+        font-size: .7rem;
+        line-height: 1.3rem;
+    }
+    .about-subcontent{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, .3fr);
+        margin-top: 5rem;
+    }
+    .about-subinfo1, .about-subinfo2, 
+    .about-subinfo3, .about-subinfo4{
+        padding: 3.5rem;
+        font-size: 1.1rem;
+        width: 300px;
+    } 
+}
+@media screen and (max-width: 700px){
+    .cover-content p{
+        font-size: .5rem;
+      }
+    .about-content .about-info{
+        margin-top: -20rem;
+    }
+    .about-content .about-info p  {
+        font-size: .6rem;
+        line-height: 1.1rem;
+    }
+    .about-subcontent{
+        margin-top: 1.5rem;
+    }
+    .about-subinfo1, .about-subinfo2, 
+    .about-subinfo3, .about-subinfo4{
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        width: 300px;
+        height: 300px;
+    } 
+    .mission-container{
+        margin-top: 1rem;
+    }
+    .mission-content3{
+        margin-top: -1rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .image-background h3{
+        font-size: 3rem;
+    }
+    .about-content .about-info{
+        margin-top: -17rem;
+    } 
+    .about-content .about-info p  {
+        font-size: .5rem;
+        line-height: .8rem;
+    }
+    .mission-container{
+        margin-top: 12rem;  
+    }
+    .about-subcontent{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, .3fr);
+    }
+    .about-subinfo1, .about-subinfo2, 
+    .about-subinfo3, .about-subinfo4{
+        padding: 1.1rem;
+        width: 250px
+    }  
+    
+    .mission-container{
+        display: grid;
+        column-gap: 3rem;
+        grid-template-columns: repeat(2, .5fr);
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .image-background h3{
+        font-size: 2rem;
+    }
+    .about-content .about-info{
+        display: grid;
+        gap: .5rem;
+        grid-template-columns:repeat(1, .5fr);
+        margin-top: -12rem;
+    }
+    .about-content .about-info h2  {
+        font-size: 1.2rem;
+        margin-left: 1.5rem;
+    }
+    .about-content .about-info p  {
+        font-size: .5rem;
+        line-height: .6rem;
+        margin-left: 1.5rem;
+    }
+    .about-subcontent{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1, .1fr);
+        justify-content: center;   
+    }
+    .about-subinfo1, .about-subinfo2, 
+    .about-subinfo3, .about-subinfo4{
+        padding: 3rem;
+        width: 350px;
+        height: 300px;
+    }  
+    .mission-container{
+        display: grid;
+        gap: .5rem;
+        grid-template-columns: repeat(1, .7fr);
+        justify-content: center; 
+        margin-top: 2rem;
+    }
+    .mission-content3{
+        margin-top: .5rem;  
+    }
+
+    .mission-container .fa-rocket, 
+    .mission-container .fa-eye, .mission-subcont .fa-hands-holding-child
+{
+    display: flex;    
+    font-size: 2.5rem;
+    margin-top: 1.7rem;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.mission-content1 .title, .mission-content2 .title, 
+.mission-content3 .title{
+    font-size: 1.2rem; 
+}
+}
+@media screen and (max-width: 400px){
+    .about-content .about-info{
+        display: grid;
+        gap: .3rem;
+        grid-template-columns:repeat(1, .5fr);
+        margin-top: -11rem;
+    }
+    .about-content .about-info p  {
+        font-size: .5rem;
+        line-height: .5rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .image-background h3{
+        font-size: 1.5rem;
+    }
+    .about-content .about-info{
+        display: grid;
+        gap: .3rem;
+        grid-template-columns:repeat(1, .5fr);
+        margin-top: -9rem;
+        margin-left: .2rem;
+    }
+    
+    .about-content .about-info p  {
+        font-size: .4rem;
+        line-height: .4rem;
+    }
+    .about-content .about-info h2{
+        font-size: 1rem;
+    }
+    .about-subcontent{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1, .1fr);
+        justify-content: center;
+        font-size: .7rem;
+        margin-top: -3rem;
+    }
+    .about-subinfo1, .about-subinfo2, 
+    .about-subinfo3, .about-subinfo4{
+        padding: 1.2rem;
+        width: 250px;
+        
+    }  
+
+    
+}
