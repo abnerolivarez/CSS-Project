@@ -378,13 +378,13 @@ footer{
         display: grid;
         gap: .3rem;
         grid-template-columns:repeat(1, .5fr);
-        margin-top: -7rem;
+        margin-top: -8rem;
         margin-left: .2rem;
     }
     
     .about-content .about-info p  {
-        font-size: .3rem;
-        line-height: .3rem;
+        font-size: .4rem;
+        line-height: .4rem;
     }
     .about-content .about-info h2{
         font-size: 1rem;
