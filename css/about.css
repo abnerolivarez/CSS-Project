@@ -403,17 +403,3 @@ footer{
         width: 250px;  
     }  
 }
-@media screen and (max-width: 270px){
-    .about-content .about-info{
-        display: grid;
-        gap: .3rem;
-        grid-template-columns:repeat(1, .5fr);
-        margin-top: -9rem;
-        margin-left: -.8rem;
-    }
-    
-    .about-content .about-info p  {
-        font-size: .3rem;
-        line-height: .3rem;
-    }
-}
