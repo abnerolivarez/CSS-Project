@@ -378,12 +378,12 @@ footer{
         display: grid;
         gap: .3rem;
         grid-template-columns:repeat(1, .5fr);
-        margin-top: -8rem;
+        margin-top: -7rem;
         margin-left: .2rem;
     }
     
     .about-content .about-info p  {
-        font-size: .4rem;
+        font-size: .3rem;
         line-height: .3rem;
     }
     .about-content .about-info h2{
