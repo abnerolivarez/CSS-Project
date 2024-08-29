@@ -378,8 +378,8 @@ footer{
         display: grid;
         gap: .3rem;
         grid-template-columns:repeat(1, .5fr);
-        margin-top: -8rem;
-        margin-left: .2rem;
+        margin-top: -9rem;
+        margin-left: .1rem;
     }
     
     .about-content .about-info p  {
