@@ -408,7 +408,7 @@ footer{
         display: grid;
         gap: .3rem;
         grid-template-columns:repeat(1, .5fr);
-        margin-top: -7rem;
+        margin-top: -9rem;
         margin-left: -.8rem;
     }
     
